@@ -183,3 +183,216 @@ align-items: center;
     flex-direction: column;
     }
     }
+    
+
+    /*------------ Estilos generales del formulario -------------*/
+main {
+    max-width: 400px; /* Tamaño óptimo para formularios */
+    margin: 50px auto; /* Centrado en la página */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    text-align: center;
+  }
+  
+  /* Estilos del formulario */
+  .form_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre elementos */
+  }
+  
+  /* Etiquetas */
+  .form_contact label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    display: block; /* Asegura alineación */
+  }
+  
+  /* Inputs y textarea */
+  .form_contact input,
+  .form_contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  /* Cambios en el foco */
+  .form_contact input:focus,
+  .form_contact textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+    outline: none;
+  }
+  
+  /* Ajuste del textarea */
+  .form_contact textarea {
+    height: 120px;
+    resize: none; /* Evita que se agrande manualmente */
+  }
+  
+  /* Botón */
+  .form_contact button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form_contact button:hover {
+    background-color: #cc5200; /* Efecto hover */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 500px) {
+    main {
+      width: 90%;
+    }
+  }
+
+
+  .sesion {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* SOLO se aplicará a contactenos.html */
+  .contacto {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e6f7ff; /* Fondo azul claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Estilos para los formularios dentro de .sesion y .contacto */
+  .sesion .form_contact, 
+  .contacto .form_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Etiquetas */
+  .sesion label, 
+  .contacto label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    display: block;
+  }
+  
+  /* Inputs y textarea */
+  .sesion input,
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  /* Efecto al enfocar */
+  .sesion input:focus,
+  .contacto input:focus,
+  .contacto textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+    outline: none;
+  }
+  
+  /* Ajuste del textarea */
+  .contacto textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  /* Botón */
+  .sesion button,
+  .contacto button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .sesion button:hover,
+  .contacto button:hover {
+    background-color: #cc5200;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 500px) {
+    .sesion, .contacto {
+      width: 90%;
+    }
+  }
+
+  
+  .whatsapp_button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp_button img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp_button:hover {
+    transform: scale(1.1);
+}
+
+.sesion, .contacto {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+
+  .gif-volando {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño según necesites */
+    animation: volar 5s linear infinite;
+}
+
+@keyframes volar {
+    from {
+        left: -100px; /* Comienza fuera de la pantalla */
+        top: 50px;
+    }
+    to {
+        left: 100vw; /* Termina fuera del otro lado de la pantalla */
+        top: 100px;
+    }
+}
