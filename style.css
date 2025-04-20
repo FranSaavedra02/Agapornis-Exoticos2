@@ -396,3 +396,17 @@ main {
         top: 100px;
     }
 }
+
+
+.imagen-cabezon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* centra verticalmente */
+}
+
+.imagen-cabezon img {
+  width: 50%; /* tamaño reducido a la mitad */
+  height: auto;
+  border-radius: 8px; /* opcional, para bordes redondeados */
+}
